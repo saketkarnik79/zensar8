@@ -1,0 +1,54 @@
+﻿@model Person
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Person</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @*@Html.DisplayNameFor(model => model.Id)*@
+            @*@Html.LabelFor(model => model.Id)*@
+            <label asp-for="Id"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @*@Html.DisplayFor(model => model.Id)*@
+            @*@Html.EditorFor(model => model.Id)*@
+            <input asp-for="Id"/>
+        </dd>
+        <dt class="col-sm-2">
+            @*@Html.DisplayNameFor(model => model.Name)*@
+            @*@Html.LabelFor(model => model.Name)*@
+            <label asp-for="Name"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @*@Html.DisplayFor(model => model.Name)*@
+            @*@Html.EditorFor(model => model.Name)*@
+            <input asp-for="Name"/>
+        </dd>
+        <dt class="col-sm-2">
+            @*@Html.DisplayNameFor(model => model.DateOfBirth)*@
+            @*@Html.LabelFor(model => model.DateOfBirth)*@
+            <label asp-for="DateOfBirth"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @*@Html.DisplayFor(model => model.DateOfBirth)*@
+            @*@Html.EditorFor(model => model.DateOfBirth)*@
+            <input asp-for="DateOfBirth"/>
+        </dd>
+        <dt class="col-sm-2">
+            @*@Html.DisplayNameFor(model => model.Email)*@
+            @*@Html.LabelFor(model => model.Email)*@
+            <label asp-for="Email"></label>
+        </dt>
+        <dd class="col-sm-10">
+            @*@Html.DisplayFor(model => model.Email)*@
+           @* @Html.EditorFor(model => model.Email)*@
+            <input asp-for="Email"/>
+        </dd>
+    </dl>
+</div>
